@@ -33357,7 +33357,7 @@
       executable: 64/ShovelKnight
       workingdir: "64"
   nameLocalized:
-    japanese: ショベルナイト
+    japanese: "Shovel Knight: Treasure Trove（ショベルナイト：トレジャートローブ）"
 250870:
   installDir: Pro Evolution Soccer 2014
   launch:
@@ -317310,7 +317310,15 @@
       description: Launch
       executable: mac_steam.app/Contents/MacOS/mac_steam
       type: none
-756510: {}
+756510:
+  cloud:
+    saves:
+      - path: Chronik Spartan/Tube2K
+        pattern: "*.txt"
+        root: WinAppDataLocalLow
+  installDir: Tube2K
+  launch:
+    - executable: Tube2K.exe
 756520:
   installDir: Sensual VR
   launch:
@@ -562664,11 +562672,25 @@
 1489680:
   cloud:
     saves:
-      - path: Kenney/Pixross
-        pattern: "*.save"
-        platforms:
-          - Windows
+      - path: Kenney/Pixross/
+        pattern: "*"
+        recursive: true
         root: WinAppDataLocalLow
+    overrides:
+      - os: MacOS
+        osCompare: "="
+        pathTransforms:
+          - find: Kenney/Pixross
+            replace: unity.Kenney.Pixross
+        root: WinAppDataLocalLow
+        useInstead: MacAppSupport
+      - os: Linux
+        osCompare: "="
+        pathTransforms:
+          - find: Kenney/Pixross
+            replace: ".config/unity3d/Kenney/Pixross"
+        root: WinAppDataLocalLow
+        useInstead: LinuxHome
   installDir: Pixross
   launch:
     - config:
@@ -577639,9 +577661,21 @@
       - path: "Sunset Visitor Studios/1000xRESIST/{64BitSteamID}/cloud"
         pattern: "*"
         root: WinSavedGames
+    overrides:
+      - addPath: ""
+        os: MacOS
+        osCompare: "="
+        root: WinSavedGames
+        useInstead: MacAppSupport
   installDir: 1000xRESIST
   launch:
-    - executable: 1000xRESIST.exe
+    - config:
+        oslist: windows
+      executable: 1000xRESIST.exe
+      type: default
+    - config:
+        oslist: macos
+      executable: 1000xRESIST.app/Contents/MacOS/1000xRESIST
       type: default
 1675860: {}
 1675900:
@@ -591544,11 +591578,16 @@
         root: WinAppDataLocal
   installDir: Supraworld
   launch:
-    - config:
+    - arguments: "-dx12"
+      config:
         osarch: "64"
-      description: Launch (Default)
+      description: Supraworld (Default Mode - DirectX 12)
       executable: Supraworld.exe
-      type: default
+      type: option1
+    - arguments: "-dx11"
+      description: Supraworld (Low-End Mode – DirectX 11)
+      executable: Supraworld.exe
+      type: option2
 1869510:
   installDir: Telestians
   launch:
@@ -616797,6 +616836,7 @@
     koreana: 더 인버스
     russian: Инверсия
 2266890: {}
+2268510: {}
 2268560:
   installDir: Zombie Survival Game Online
   launch:
@@ -621908,6 +621948,36 @@
         oslist: linux
       executable: jane
       type: default
+2378230:
+  cloud:
+    saves:
+      - path: "StarBlade Games/Neo Junk City/CloudSaves/{64BitSteamID}/Data"
+        pattern: NeoJunkCity_*.save
+        root: WinAppDataLocalLow
+      - path: "StarBlade Games/Neo Junk City/CloudSaves/{64BitSteamID}/Data"
+        pattern: NeoJunkCity_*.jpg
+        root: WinAppDataLocalLow
+      - path: "StarBlade Games/Neo Junk City/CloudSaves/{64BitSteamID}/Data"
+        pattern: Profile_*.profile
+        root: WinAppDataLocalLow
+      - path: "StarBlade Games/Neo Junk City/CloudSaves/{64BitSteamID}/Data"
+        pattern: Profile_*.language
+        root: WinAppDataLocalLow
+      - path: "StarBlade Games/Neo Junk City/CloudSaves/{64BitSteamID}/Data"
+        pattern: active.profile-id
+        root: WinAppDataLocalLow
+      - path: "StarBlade Games/Neo Junk City/CloudSaves/{64BitSteamID}/Data"
+        pattern: storage.state
+        root: WinAppDataLocalLow
+    overrides:
+      - addPath: ""
+        os: Windows
+        osCompare: "="
+        root: gameinstall
+        useInstead: gameinstall
+  installDir: Neo Junk City
+  launch:
+    - executable: Neo Junk City.exe
 2378620:
   cloud:
     saves:
@@ -644065,7 +644135,54 @@
     japanese: "BrokenLore: LOW | 霧雨村"
     schinese: 破碎怪谈：雾雨村
     tchinese: 破碎怪談：霧雨村
-3014860: {}
+3014860:
+  cloud:
+    saves:
+      - path: lists
+        pattern: "*.lst"
+        root: gameinstall
+      - path: ""
+        pattern: "*.itp"
+        root: SteamCloudDocuments
+    overrides:
+      - os: Windows
+        osCompare: "="
+        pathTransforms:
+          - find: lists
+            replace: icytower/lists
+        root: gameinstall
+        useInstead: WinAppDataRoaming
+      - os: MacOS
+        osCompare: "="
+        pathTransforms:
+          - find: lists
+            replace: icytower/lists
+        root: gameinstall
+        useInstead: MacAppSupport
+      - os: Windows
+        osCompare: "="
+        pathTransforms:
+          - find: ""
+            replace: icytower
+        root: SteamCloudDocuments
+        useInstead: WinAppDataRoaming
+      - os: MacOS
+        osCompare: "="
+        pathTransforms:
+          - find: ""
+            replace: icytower
+        root: SteamCloudDocuments
+        useInstead: MacAppSupport
+  installDir: icytower
+  launch:
+    - config:
+        oslist: windows
+      executable: icytower.exe
+      type: default
+    - config:
+        oslist: macos
+      executable: icytower.app/Contents/MacOS/love
+      type: default
 3015650:
   cloud:
     saves:
@@ -658002,7 +658119,17 @@
       description: B&S NEO EU
       executable: /UE4/BNSR/Binaries/Win64/BNSR.exe
       type: option1
-3669620: {}
+3669620:
+  installDir: Warhammer Survivors
+  launch:
+    - config:
+        osarch: "64"
+        oslist: windows
+      executable: WarhammerSurvivors.exe
+      type: default
+  nameLocalized:
+    schinese: 戰鎚倖存者
+    tchinese: 战锤幸存者
 3669870:
   installDir: CONTROL Resonant
   launch:
@@ -664775,7 +664902,7 @@
   launch:
     - arguments: "-anticheat_settings=QASettings.json"
       config:
-        betakey: "silver,silver2,protection,silvercompatrun,exttest2"
+        betakey: "silver,silver2,protection,silvercompatrun,exttest2,silver3"
       description: Play NBA 2K27 (QA Environment)
       executable: start_protected_game.exe
       type: default
@@ -666177,7 +666304,20 @@
   installDir: Armed Snake
   launch:
     - executable: Armed Snake.exe
-4832970: {}
+4832970:
+  installDir: WhattheBuck
+  launch:
+    - config:
+        osarch: "64"
+        oslist: windows
+      executable: What the Buck.exe
+    - config:
+        osarch: "64"
+        oslist: linux
+      executable: What the Buck.x86_64
+    - config:
+        oslist: macos
+      executable: What the Buck.app/Contents/MacOS/What the Buck
 4834760:
   cloud:
     saves:
