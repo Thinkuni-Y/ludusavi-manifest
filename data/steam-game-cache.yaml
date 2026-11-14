@@ -411884,7 +411884,7 @@
       executable: Launcher/dowser.exe
       type: option1
   nameLocalized:
-    schinese: "Cities: Skylines II 都市：天际线2"
+    schinese: 《都市：天际线2》
 949290:
   cloud:
     saves:
@@ -583933,6 +583933,21 @@
       description: Standalone
       executable: The Jackbox Party Starter.exe
       type: default
+    - arguments: product/the-jackbox-party-starter
+      config:
+        betakey: latest
+        osarch: "64"
+        oslist: windows
+      description: via The Jackbox Games Megapicker
+      executable: launch_megapicker.exe
+      type: option1
+    - arguments: product/the-jackbox-party-starter
+      config:
+        betakey: latest
+        oslist: macos
+      description: via The Jackbox Games Megapicker
+      executable: launch_megapicker
+      type: option1
 1755830:
   cloud:
     saves:
@@ -584695,6 +584710,12 @@
         pattern: "*.sav"
         platforms:
           - Windows
+        root: WinAppDataLocal
+      - path: HumanitZ/Saved/SaveGames
+        pattern: "*.exr"
+        platforms:
+          - Windows
+        recursive: true
         root: WinAppDataLocal
   installDir: HumanitZ
   launch:
@@ -614325,7 +614346,7 @@
       description: release
       executable: Rogue_x64_Release.exe
       type: default
-    - arguments: " -public_key_store_address pks.pc.tctd2.ubisoft.com -public_key_store_port 27015 -proxylist pc-lima.tctd2.ubisoft.com -proxylist_port 51000 -online -sdfonly -login_ubiservices -uplay_launcher -retail_frontend -use_public_key_store -retail_certs -startgame -dnatracking -enable_client_tracking -uplay_steam_mode -force_enable_epicEOS -force_enable_eac_module -force_enable_eos_sdk -anticheat_settings=Settings_Release_PROD.json -allowclmismatch"
+    - arguments: " -public_key_store_address pks.pc.tctd2.ubisoft.com -public_key_store_port 27015 -proxylist pc-oscar.tctd2.ubisoft.com -proxylist_port 51000 -online -sdfonly -login_ubiservices -uplay_launcher -retail_frontend -use_public_key_store -retail_certs -startgame -dnatracking -enable_client_tracking -uplay_steam_mode -force_enable_epicEOS -force_enable_eac_module -force_enable_eos_sdk -anticheat_settings=Settings_Release_PROD.json -allowclmismatch"
       config:
         betakey: qc-rel
         osarch: "64"
@@ -614363,13 +614384,13 @@
         oslist: windows
       description: Release
       executable: Rogue_x64_Release.exe
-    - arguments: "-proxylist BUC-WKS-PR1596.ubisoft.org -force_enable_epicEOS -force_enable_eos_sdk -nofullscreentutorials -proxylist_port 11001 -online -noserver -startgame -nophysdatecheck -ssl -noAssetScanner -no_game_proxy -sdfonly -retail_frontend -enabledebugui -nolatency -allowcutsceneskip -performance_tracking -enable_client_tracking  -uplay_launcher -upc_enable_dev_console -login_ubiservices -enable_mps_debug -dnatracking -allowclmismatch -sdfonly -uplay_steam_mode -anticheat_settings=Settings_Release_PROD.json -force_enable_eac_module"
+    - arguments: TheDivision2 --exe EACLaunch.exe -proxylist BUC-WKS-PR1596.ubisoft.org -force_enable_sen -force_enable_epiceos -force_enable_eos_sdk -force_enable_eac_module -nofullscreentutorials -proxylist_port 11001 -online -noserver -startgame -nophysdatecheck -ssl -noAssetScanner -no_game_proxy -sdfonly -retail_frontend -enabledebugui -nolatency -allowcutsceneskip -performance_tracking -enable_client_tracking -uplay_launcher -upc_enable_dev_console -login_ubiservices -enable_mps_debug -dnatracking -allowclmismatch -sdfonly -uplay_steam_mode -anticheat_settings=Settings_Release_UAT.json
       config:
         betakey: eac-release
         osarch: "64"
         oslist: windows
       description: eac-release
-      executable: EACLaunch.exe
+      executable: sen_launcher.exe
       type: default
   nameLocalized:
     schinese: 全境封锁2
@@ -633650,6 +633671,46 @@
     japanese: 堕落エルフ・フレイヤ
     schinese: 堕落精灵·芙蕾雅
     tchinese: 墮落精靈·芙蕾雅
+2652000:
+  installDir: The Jackbox Naughty Pack
+  launch:
+    - config:
+        oslist: macos
+      executable: The Jackbox Naughty Pack.app
+      type: default
+    - config:
+        osarch: "64"
+        oslist: linux
+      executable: Launcher.sh
+      type: default
+    - arguments: product/the-jackbox-naughty-pack
+      config:
+        osarch: "64"
+        oslist: windows
+      description: via The Jackbox Games Megapicker
+      executable: launch_mp.bat
+      type: option1
+    - config:
+        osarch: "64"
+        oslist: windows
+      description: Standalone
+      executable: The Jackbox Naughty Pack.exe
+      type: default
+    - arguments: product/the-jackbox-naughty-pack
+      config:
+        betakey: latest
+        osarch: "64"
+        oslist: windows
+      description: via The Jackbox Games Megapicker
+      executable: launch_megapicker.exe
+      type: option1
+    - arguments: product/the-jackbox-naughty-pack
+      config:
+        betakey: latest
+        oslist: macos
+      description: via The Jackbox Games Megapicker
+      executable: launch_megapicker
+      type: option1
 2653240:
   installDir: "Knight's Path The Tournament"
   launch:
@@ -667269,6 +667330,7 @@
 5036490: {}
 5037200: {}
 5037250: {}
+5043840: {}
 5051080:
   cloud:
     saves:
@@ -667366,6 +667428,25 @@
     - config:
         oslist: macos
       executable: Neon Breaker.app
+      type: default
+5054700:
+  installDir: Fakin It XL
+  launch:
+    - config:
+        osarch: "64"
+        oslist: linux
+      executable: Launcher.sh
+      type: default
+    - arguments: product/fakin-it-xl
+      config:
+        osarch: "64"
+        oslist: windows
+      executable: launch_megapicker.exe
+      type: default
+    - arguments: product/fakin-it-xl
+      config:
+        oslist: macos
+      executable: launch_megapicker
       type: default
 5056390:
   cloud:
