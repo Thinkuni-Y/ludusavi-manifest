@@ -5181,7 +5181,6 @@
   launch:
     - executable: PrinceOfPersia.exe
 13510:
-  state: outdated
   installDir: Ghost Recon Advanced Warfighter 2
   launch:
     - executable: graw2.exe
@@ -5236,7 +5235,6 @@
     - arguments: "-uplay_steam_mode"
       executable: PrinceOfPersia.EXE
 13640:
-  state: outdated
   installDir: Ghost Recon Advanced Warfighter
   launch:
     - executable: graw.exe
@@ -7268,7 +7266,6 @@
     - description: View Support Information
       executable: "Support\\EA Help\\Electronic_Arts_Technical_Support.htm"
 24880:
-  state: outdated
   installDir: The Saboteur
   launch:
     - executable: Saboteur.exe
@@ -8145,7 +8142,6 @@
     - description: "Launch Delta Force: Xtreme 2 Editor"
       executable: dfx2med.exe
 32620:
-  state: outdated
   installDir: Delta Force
   launch:
     - executable: Df.exe
@@ -9979,7 +9975,6 @@
   launch:
     - executable: game.exe
 40700:
-  state: outdated
   installDir: Machinarium
   launch:
     - config:
@@ -10499,7 +10494,6 @@
   launch:
     - executable: ShrekForeverAfter.exe
 42670:
-  state: outdated
   installDir: Singularity
   launch:
     - executable: "binaries\\Singularity.exe"
@@ -13324,7 +13318,6 @@
   launch:
     - executable: NBA2K11.exe
 65980:
-  state: outdated
   installDir: "Sid Meier's Civilization Beyond Earth"
   launch:
     - config:
@@ -13916,7 +13909,6 @@
       executable: Gemini Rue.exe
       type: default
 80330:
-  state: outdated
   cloud:
     saves:
       - path: Blackwell Legacy
@@ -36744,7 +36736,6 @@
       type: none
       workingdir: "ScummVM_Linux\\"
 255940:
-  state: outdated
   installDir: The11thHour
   launch:
     - config:
@@ -49004,7 +48995,6 @@
     - description: Configure Settings
       executable: config3dr2000.exe
 283370:
-  state: outdated
   installDir: Marine Sharpshooter 2  Jungle Warfare
   launch:
     - config:
@@ -127231,7 +127221,6 @@
       executable: LinkRealmsMapEditor.exe
       type: editor
 402530:
-  state: outdated
   installDir: TLDCE2
   launch:
     - config:
@@ -185914,7 +185903,6 @@
       executable: Curse.x86_64
       type: default
 510590:
-  state: outdated
   installDir: D
   launch:
     - arguments: "-conf dosbox_d.conf -conf dosbox_d_launch_windows.conf -noconsole"
@@ -268443,7 +268431,6 @@
       executable: nw.exe
       type: default
 668580:
-  state: outdated
   cloud:
     saves:
       - path: AtomicHeart/Saved/SaveGames
@@ -286045,7 +286032,6 @@
       executable: ILB.exe
       type: none
 697580:
-  state: outdated
   installDir: Screamer
   launch:
     - config:
@@ -564629,7 +564615,6 @@
       executable: Aeterna Noctis.exe
       type: default
 1518370:
-  state: outdated
   installDir: ThemeParkMystery
   launch:
     - arguments: "\"TPARK.COM\" -conf \"dosbox_themeparkmystery.conf\" -noconsole"
@@ -580722,7 +580707,6 @@
     - executable: motogp22.exe
       type: none
 1710820:
-  state: outdated
   cloud:
     saves:
       - path: "Not Knowing Corporation\\Cleared Hot"
@@ -586947,7 +586931,6 @@
       executable: Signal Lost.x86_64
       type: option1
 1801520:
-  state: outdated
   cloud:
     saves:
       - path: Exodus/Saved/SaveGames/Slots
@@ -611364,7 +611347,6 @@
       type: openxr
 2165810: {}
 2166060:
-  state: outdated
   installDir: Amanda the Adventurer
   launch:
     - executable: Amanda The Adventurer.exe
@@ -637051,7 +637033,6 @@
     - executable: Rise Eterna War.exe
 2740750: {}
 2741360:
-  state: outdated
   installDir: Valiant Hearts Coming Home
   launch:
     - arguments: "-uplay_steam_mode"
@@ -651887,7 +651868,6 @@
     - executable: Savage.exe
       type: default
 3319580:
-  state: outdated
   cloud:
     saves:
       - path: game
@@ -652473,7 +652453,6 @@
       executable: OFF.x86_64
       type: default
 3339970:
-  state: outdated
   cloud:
     saves:
       - path: package.nw/save
@@ -664770,7 +664749,6 @@
     japanese: BIOHAZARD 3 LAST ESCAPE (1999)
     koreana: BIOHAZARD 3 LAST ESCAPE (1999)
 4249130:
-  state: outdated
   installDir: 4249130_DinoCrisis
   launch:
     - executable: 4249130_Launcher.exe
@@ -664923,6 +664901,7 @@
         oslist: windows
       executable: "Vampire's Fall 2.exe"
       type: default
+4269060: {}
 4271520: {}
 4271620: {}
 4277630: {}
@@ -666424,8 +666403,7 @@
     schinese: 西瓜游戏
     spanish: Suika Game
     tchinese: 西瓜遊戲
-4573410:
-  state: outdated
+4573410: {}
 4576490:
   installDir: Casualties Unknown
   launch:
