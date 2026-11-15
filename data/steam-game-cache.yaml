@@ -665028,6 +665028,10 @@
   installDir: "Edgar Allan Poe's Interactive Horror 1995 Edition"
   launch:
     - executable: DarkEyeLauncher.exe
+4293850:
+  installDir: Wet Wealth
+  launch:
+    - executable: Wet Wealth.exe
 4295810:
   nameLocalized:
     english: "A Whisper of Fall: Jinyiwei"
