@@ -14167,12 +14167,14 @@ AI War 2:
   id:
     gogExtra:
       - 1512994101
+      - 1674526429
       - 1889174592
       - 1971284855
     steamExtra:
       - 1196420
       - 1290340
       - 1466780
+      - 4534540
   installDir:
     AI War 2: {}
   steam:
@@ -19591,6 +19593,8 @@ Actraiser Renaissance:
   steam:
     id: 1393370
 Acts of Blood:
+  cloud:
+    steam: true
   id:
     lutris: acts-of-blood
     steamExtra:
@@ -106757,6 +106761,7 @@ Broforce:
     id: 274190
 Brok the InvestiGator:
   cloud:
+    epic: true
     gog: true
     steam: true
   files:
@@ -196119,6 +196124,8 @@ Dereliction:
   steam:
     id: 969420
 Derelikt:
+  cloud:
+    steam: true
   files:
     "<home>/AppData/LocalLow/Visuwyg/DERELIKT/PersistentData/*/*.drt":
       tags:
@@ -215579,19 +215586,18 @@ Dragon Battle:
   steam:
     id: 859310
 Dragon Blaze:
+  id:
+    steamExtra:
+      - 1279420
   installDir:
-    Dragon Blaze: {}
+    PSIKYO Dragon Blaze: {}
   launch:
     "<base>/dragonblaze.exe":
       - when:
           - os: windows
             store: steam
-    "<base>/setting.exe":
-      - when:
-          - os: windows
-            store: steam
   steam:
-    id: 1279420
+    id: 4123700
 Dragon Blood:
   installDir:
     Dragon Blood: {}
@@ -265952,11 +265958,14 @@ Farthest Frontier:
   cloud:
     steam: true
   files:
-    "<winDocuments>/My Games/Farthest Frontier/Save":
-      tags:
-        - save
+    "<home>/Saved Games/Farthest Frontier/Save":
       when:
         - os: windows
+          store: steam
+    "<winLocalAppData>/Farthest Frontier/Save":
+      when:
+        - os: windows
+          store: steam
   installDir:
     Farthest Frontier: {}
   launch:
@@ -313776,6 +313785,15 @@ Goodbye Deponia:
 Goodbye My King:
   steam:
     id: 647410
+Goodbye Seoul:
+  cloud:
+    steam: true
+  id:
+    lutris: goodbye-seoul
+    steamExtra:
+      - 2711590
+  steam:
+    id: 2551550
 Goodbye Volcano High:
   cloud:
     steam: true
@@ -323487,19 +323505,18 @@ Gunball:
   steam:
     id: 632240
 Gunbarich:
+  id:
+    steamExtra:
+      - 1342240
   installDir:
-    GUNBARICH: {}
+    PSIKYO Gunbarich: {}
   launch:
     "<base>/Gunbarich.exe":
       - when:
           - os: windows
             store: steam
-    "<base>/setting.exe":
-      - when:
-          - os: windows
-            store: steam
   steam:
-    id: 1342240
+    id: 4123560
 Gunbird:
   files:
     "<winAppData>/gunbird/savedata.bin":
@@ -323512,33 +323529,31 @@ Gunbird:
         - config
       when:
         - os: windows
+  id:
+    steamExtra:
+      - 1261970
   installDir:
-    GUNBIRD: {}
+    PSIKYO GUNBIRD: {}
   launch:
     "<base>/gunbird.exe":
       - when:
           - os: windows
             store: steam
-    "<base>/setting.exe":
-      - when:
-          - os: windows
-            store: steam
   steam:
-    id: 1261970
+    id: 4123540
 Gunbird 2:
+  id:
+    steamExtra:
+      - 1279410
   installDir:
-    GUNBIRD2: {}
+    PSIKYO GUNBIRD 2: {}
   launch:
     "<base>/gunbird2.exe":
       - when:
           - os: windows
             store: steam
-    "<base>/setting.exe":
-      - when:
-          - os: windows
-            store: steam
   steam:
-    id: 1279410
+    id: 4123550
 Gunboat:
   gog:
     id: 1442803102
@@ -329439,8 +329454,16 @@ Hammer Heads:
 Hammer of the Gods:
   cloud:
     gog: true
+    steam: true
   gog:
     id: 2088011259
+  id:
+    gogExtra:
+      - 1688438535
+    steamExtra:
+      - 5391870
+  steam:
+    id: 4622690
 HammerHelm:
   files:
     "<home>/AppData/LocalLow/Super6Games/HammerHelm/*.txt":
@@ -540904,7 +540927,7 @@ Phantom Blade Zero:
   cloud:
     steam: true
   files:
-    "<base>/ProjectPBZ/Saved":
+    "<base>/ProjectPBZ/Saved/*.sav":
       tags:
         - config
       when:
@@ -553047,22 +553070,22 @@ Police Stunt Cars:
     id: 1124190
 Police Tactical Training:
   files:
-    "<base>/DefEquip.cfg":
+    "<base>/Home/DefEquip.cfg":
       tags:
         - config
       when:
         - os: windows
-    "<base>/default.cfg":
+    "<base>/Home/default.cfg":
       tags:
         - config
       when:
         - os: windows
-    "<base>/defcmds.cfg":
+    "<base>/Home/defcmds.cfg":
       tags:
         - config
       when:
         - os: windows
-    "<base>/player.cfg":
+    "<base>/Home/player.cfg":
       tags:
         - config
       when:
@@ -621999,19 +622022,18 @@ Samudra:
   steam:
     id: 1116260
 Samurai Aces:
+  id:
+    steamExtra:
+      - 1261980
   installDir:
-    Samurai Aces: {}
+    PSIKYO SAMURAI ACES: {}
   launch:
     "<base>/saces.exe":
       - when:
           - os: windows
             store: steam
-    "<base>/setting.exe":
-      - when:
-          - os: windows
-            store: steam
   steam:
-    id: 1261980
+    id: 4123500
 "Samurai Aces III: Sengoku Cannon":
   files:
     "<winAppData>/scannon/savedata.bin":
@@ -622024,19 +622046,18 @@ Samurai Aces:
         - config
       when:
         - os: windows
+  id:
+    steamExtra:
+      - 1279390
   installDir:
-    SENGOKU CANNON: {}
+    PSIKYO SAMURAI ACES III: {}
   launch:
     "<base>/scannon.exe":
       - when:
           - os: windows
             store: steam
-    "<base>/setting.exe":
-      - when:
-          - os: windows
-            store: steam
   steam:
-    id: 1279390
+    id: 4123530
 Samurai Forge:
   steam:
     id: 617350
@@ -662054,19 +662075,18 @@ Sol Divide:
   steam:
     id: 379350
 "Sol Divide: Sword of Darkness":
+  id:
+    steamExtra:
+      - 1279450
   installDir:
-    SOL DIVIDE -SWORD OF DARKNESS-: {}
+    PSIKYO SOL DIVIDE -SWORD OF DARKNESS-: {}
   launch:
-    "<base>/setting.exe":
-      - when:
-          - os: windows
-            store: steam
     "<base>/soldivide.exe":
       - when:
           - os: windows
             store: steam
   steam:
-    id: 1279450
+    id: 4123670
 Sol Galaxy Defender:
   id:
     steamExtra:
@@ -664439,6 +664459,11 @@ Song of Horror:
             store: steam
   steam:
     id: 1096570
+"Song of Horror: Enhanced Edition":
+  cloud:
+    steam: true
+  steam:
+    id: 5528520
 Song of Iron:
   files:
     $USER/AppData/Local/SONG_of_IRON/Saved/Config:
@@ -692594,6 +692619,7 @@ Stellaris:
       - 2048809075
       - 2062279897
       - 2071004157
+      - 2085251567
       - 2106739867
       - 2112845659
     lutris: stellaris
@@ -692644,6 +692670,7 @@ Stellaris:
       - 3417840
       - 3417850
       - 4241420
+      - 4241440
   installDir:
     Stellaris: {}
   launch:
@@ -698442,47 +698469,44 @@ Strikers:
   steam:
     id: 588480
 Strikers 1945:
+  id:
+    steamExtra:
+      - 1261960
   installDir:
-    STRIKERS1945: {}
+    PSIKYO STRIKERS 1945: {}
   launch:
     "<base>/s1945.exe":
       - when:
           - os: windows
             store: steam
-    "<base>/setting.exe":
-      - when:
-          - os: windows
-            store: steam
   steam:
-    id: 1261960
+    id: 4123570
 Strikers 1945 II:
+  id:
+    steamExtra:
+      - 1279380
   installDir:
-    STRIKERS1945 Ⅱ: {}
+    PSIKYO STRIKERS 1945 Ⅱ: {}
   launch:
     "<base>/s1945ii.exe":
       - when:
           - os: windows
             store: steam
-    "<base>/setting.exe":
-      - when:
-          - os: windows
-            store: steam
   steam:
-    id: 1279380
+    id: 4123580
 Strikers 1945 III:
+  id:
+    steamExtra:
+      - 1279400
   installDir:
-    STRIKERS1945 III: {}
+    PSIKYO STRIKERS 1945 III: {}
   launch:
     "<base>/s1945iii.exe":
       - when:
           - os: windows
             store: steam
-    "<base>/setting.exe":
-      - when:
-          - os: windows
-            store: steam
   steam:
-    id: 1279400
+    id: 4123630
 Strikers Edge:
   installDir:
     Strikers Edge: {}
@@ -716555,6 +716579,7 @@ Symphony of Stars:
       - 1977690
       - 1999620
       - 2432430
+      - 5395630
   installDir:
     SoW1 Project: {}
   launch:
@@ -728636,19 +728661,18 @@ Tenebrous Dungeon:
   steam:
     id: 1016420
 Tengai:
+  id:
+    steamExtra:
+      - 1279370
   installDir:
-    TENGAI: {}
+    PSIKYO TENGAI: {}
   launch:
     "<base>/sblade.exe":
       - when:
           - os: windows
             store: steam
-    "<base>/setting.exe":
-      - when:
-          - os: windows
-            store: steam
   steam:
-    id: 1279370
+    id: 4027800
 Tengami:
   cloud:
     steam: true
@@ -819994,6 +820018,24 @@ UniTower:
             store: steam
   steam:
     id: 1139670
+"Unicorn Academy: Island of Magic":
+  cloud:
+    steam: true
+  files:
+    "<base>/Corn/Saved/SaveGames/*.sav":
+      when:
+        - store: steam
+    "<winLocalAppData>/Corn/Saved/SaveGames/*.sav":
+      when:
+        - store: steam
+  installDir:
+    Unicorn Academy Island of Magic: {}
+  launch:
+    "<base>/Corn.exe":
+      - when:
+          - store: steam
+  steam:
+    id: 4380910
 Unicorn Dungeon:
   installDir:
     Unicorn Dungeon: {}
@@ -862459,6 +862501,7 @@ Work girl打工妹日记:
   id:
     gogExtra:
       - 1414370103
+      - 1658669887
       - 1668945748
       - 1748804900
       - 1967593597
@@ -862469,6 +862512,7 @@ Work girl打工妹日记:
       - 2499360
       - 3333420
       - 3334790
+      - 5303130
   installDir:
     SovietRepublic: {}
   launch:
@@ -876923,19 +876967,18 @@ Zero Gravity Pool:
   steam:
     id: 778600
 Zero Gunner 2-:
+  id:
+    steamExtra:
+      - 1342250
   installDir:
-    ZERO GUNNER 2-: {}
+    PSIKYO Zero Gunner 2: {}
   launch:
-    "<base>/ZERO GUNNER 2-.exe":
-      - when:
-          - os: windows
-            store: steam
-    "<base>/setting.exe":
+    "<base>/Zero Gunner 2.exe":
       - when:
           - os: windows
             store: steam
   steam:
-    id: 1342250
+    id: 4123660
 Zero Hour:
   cloud:
     epic: true
